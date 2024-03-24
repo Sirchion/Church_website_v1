@@ -45,12 +45,12 @@
   margin-right: 10px; /* Adjust spacing between links */
   display: flex;
   text-decoration: none;
-  color: #F8FFE5;
   font-size: 3vh;
   padding-right: 10px;
   position: relative; /* Positioning context for the pseudo-element */
   transition: color 0.5s ease;
   cursor: pointer;
+  color: var(--main-color);
 }
 
 
@@ -61,19 +61,19 @@
   bottom: -2px; /* Adjust distance from the text */
   width: 0;
   height: 2px; /* Adjust thickness of the underline */
-  background-color: var(--hover-colour); /* Adjust color of the underline */
+  background-color: var(--secondary-color); /* Adjust color of the underline */
   transition: width 0.5s ease, background-color 0.3s ease; /* Add transition for smooth animation */
   
 }
 
 .link:hover::after {
   width: 90%; /* Expand the width on hover */
-  color: var(--hover-colour);
-  background-color: var(--hover-colour);
+  color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 .link:hover {
-  color: var(--hover-colour);
+  color: var(--secondary-color);
 }
 
 
