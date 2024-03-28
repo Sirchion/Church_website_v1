@@ -13,19 +13,21 @@ const MainNavBar = () => {
  };
 
  return (
-    <div className='nav_container'>
-      <Link className='logo_container' aria-label='Logo'></Link>
+    <div className='bg-img'>
+      <div className='nav_container'>
+        <Link className='logo_container' aria-label='Logo'></Link>
 
-      <div className='navbar'>
-        <ul className={`nav_menu ${isActive ? 'active' : ''}`}>
-          <li className='nav_items'><Link className='nav_link' to="/">Home</Link></li>
-          <li className='nav_items'><Link className='nav_link' to="/About">About</Link></li>
-          <li className='nav_items'><Link className='nav_link' to="Clubs">Clubs</Link></li>
-        </ul>
-        <div className={`hamburger ${isActive ? 'active' : ''}`} onClick={toggleActive}>
-          <span className='burger'></span>
-          <span className='burger'></span>
-          <span className='burger'></span>
+        <div className='navbar'>
+          <ul className={`nav_menu ${isActive ? 'active' : ''}`}>
+            <li className='nav_items'><Link className='nav_link' to="/">Home</Link></li>
+            <li className='nav_items'><Link className='nav_link' to="/About">About</Link></li>
+            <li className='nav_items'><Link className='nav_link' to="Clubs">Clubs</Link></li>
+          </ul>
+          <div className={`hamburger ${isActive ? 'active' : ''}`} onClick={toggleActive}>
+            <span className='burger'></span>
+            <span className='burger'></span>
+            <span className='burger'></span>
+          </div>
         </div>
       </div>
     </div>
